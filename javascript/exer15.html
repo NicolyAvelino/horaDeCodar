@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 15</title>
+</head>
+
+<body>
+    <script>
+        //15. A Loja FabiDRONES está promovendo uma promoção onde cada drone artesanal custa R$8.190 e pode ser pago em até 15 vezes sem juros. Crie um programa onde o usuário possa informar o valor parcelas que deseja pagar e exiba o valor de cada parcela.
+        
+		var valor = 8.190;
+        var resultado = 0;
+
+		var parcelas = parseInt(prompt("Digite de 1 a 15 o número de parcelas que deseja pagar (somente números): "));
+		
+		if(parcelas > 0 && parcelas <= 15){
+			resultado = valor / parcelas;
+			document.write("Valor a pagar em " + parcelas + " vezes sem juros é R$" + resultado);
+		}
+		else{
+			document.write("Valor indefinido!");	
+		}
+    </script>
+</body>
+
+</html>
